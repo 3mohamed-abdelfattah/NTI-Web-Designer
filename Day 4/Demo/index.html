@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* border: 1px solid blue; */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body{
+            font-size: 30px;
+        } */
+        /* html{
+            font-size: 20px;
+        } */
+        /* div{
+            font-size: 50px;
+            color: red;
+        } */
+        /* p {
+            color: #0000ff80
+        } */
+
+        /* .parent{
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+         }
+         .child{
+            width: 50%;
+            height: 50%;
+            background-color: bisque;
+         } */
+
+        .parent {
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            /* padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px; */
+            /* padding: 20px; */
+            padding: 20px 20px;
+            padding: 20px 20px 20px;
+        }
+
+        .child {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            /* border-width: 3px;
+            border-color: black;
+            border-style: double; */
+            border: 4px double black;
+            /* border-radius: 50%; */
+        }
+
+        .first,
+        .second {
+            width: 200px;
+            height: 200px;
+            /* display: inline-block; */
+        }
+
+        .first {
+            float: left;
+            background-color: bisque;
+            /* margin-right: 50px; */
+            /* margin-left: 50px; */
+            /* margin-top: 50px; */
+            /* margin-bottom: 50px; */
+        }
+
+        .second {
+            float: left;
+            background-color: aqua;
+            /* margin-top: 60px; */
+            /* margin-left: 20px; */
+        }
+
+        /* ----------------------------- */
+        header {
+            background-color: blueviolet;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li {
+            /* display: inline-block; */
+            float: left;
+            margin: 5px;
+            list-style-type: none;
+        }
+
+        /* p{
+            width: 50px;
+            background-color: bisque;
+            overflow: hidden;
+        } */
+        article {
+            width: 31.33%;
+            float: left;
+            margin: 1%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        button {
+            float: right;
+            background-color: white;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            height: 400px;
+            background-image: url('../images/1.jpg');
+            background-size: cover;
+            background-position: center;
+            /* background-repeat: no-repeat; */
+            color: wheat;
+        }
+
+        .layer {
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(0, 0, 0, 0.215); */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.37), transparent, white);
+        }
+    </style>
+</head>
+
+<body>
+    <!--?                     unit css -->
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti eaque aliquid minus ipsa, maiores ullam
+        dolores quis repellendus. Deserunt neque vel omnis eveniet sit officia corporis ut voluptatum modi!</p> -->
+
+    <!--?                     color  -->
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur neque harum esse molestias totam aspernatur voluptatem laudantium veritatis accusamus similique iste, nulla nam, praesentium commodi maiores autem ipsam culpa excepturi.</p> -->
+
+    <!--?                     box model  -->
+
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+    <!-- <span class="first">first</span>
+    <span class="second">second</span> -->
+
+    <!-- <div class="first" >first div</div>
+    <div class="second" >second div</div>
+    <div style="clear:both ;"></div> -->
+
+    <!-- <br> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae unde nobis quam molestias enim temporibus distinctio accusantium sit porro nulla magnam libero consectetur, accusamus qui aut ipsam vitae deserunt mollitia!</p> -->
+
+    <!-- <span class="first">first span</span>
+    <span class="second">second span</span> -->
+    <header>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">Contact us</a>
+            </li>
+        </ul>
+    </header>
+    <div class="clr"></div>
+
+    <nav>
+        <div class="layer">
+            Header ......
+        </div>
+
+    </nav>
+    <section>
+        <article>
+            <img src="../images/orage-juice-kariz-400x400.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam deleniti ducimus facere molestias eaque
+                laborum nostrum cum, minus repellendus? Sint eligendi molestiae alias commodi quasi laborum, magni
+                voluptas! Assumenda, nemo?</p>
+            <button>Details</button>
+        </article>
+        <article>
+            <img src="../images/orage-juice-kariz-400x400.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam deleniti ducimus facere molestias eaque
+                laborum nostrum cum, minus repellendus? Sint eligendi molestiae alias commodi quasi laborum, magni
+                voluptas! Assumenda, nemo?</p>
+            <button>Details</button>
+        </article>
+        <article>
+            <img src="../images/orage-juice-kariz-400x400.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam deleniti ducimus facere molestias eaque
+                laborum nostrum cum, minus repellendus? Sint eligendi molestiae alias commodi quasi laborum, magni
+                voluptas! Assumenda, nemo?</p>
+            <button>Details</button>
+        </article>
+        <article>
+            <img src="../images/orage-juice-kariz-400x400.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam deleniti ducimus facere molestias eaque
+                laborum nostrum cum, minus repellendus? Sint eligendi molestiae alias commodi quasi laborum, magni
+                voluptas! Assumenda, nemo?</p>
+            <button>Details</button>
+        </article>
+    </section>
+    <div class="clr"></div>
+
+</body>
+
+</html>

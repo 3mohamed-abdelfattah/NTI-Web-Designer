@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+        #header {
+            background-color: red;
+            width: 100%;
+        }
+
+        #none-bullet-list {
+            list-style: square;
+        }
+
+        span>a {
+            margin: 0 0 0 10px;
+        }
+
+        .border-span {
+            outline: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <p>This is the page header</p>
+    </div>
+
+    <div style="display: flex;flex-direction: row;">
+        <div style="display: flex;flex-direction: column;background-color: rgba(0, 0, 0, 0.393);padding-right: 30px;">
+            <span style="border: 2px;border-style: dashed;gap: 10px;">
+                <div>
+                    <label for="name">UserName:</label>
+                    <input type="text" id="name" placeholder="UserName">
+                </div>
+                <div>
+                    <label for="password">password:</label>
+                    <input type="password" id="password" placeholder="password">
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Check me</label>
+                </div>
+                <div>
+                    <input type="submit" id="submit" placeholder="submit">
+                </div>
+            </span>
+            <span style="display: flex;flex-direction:column;margin: 10px 0;">
+                <h1>site menu</h1>
+                <a href="https://example.com">links</a>
+                <a href="https://example.com">links</a>
+                <a href="https://example.com">links</a>
+                <a href="https://example.com">links</a>
+                <a href="https://example.com">links</a>
+            </span>
+        </div>
+        <div style="background-color: rgba(255, 0, 0, 0.5);padding:10px 0 5px 5px;">
+            <h1>About Us</h1>
+            <p style="font-size: small;color: red;text-align: left;font-weight: bolder;">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Odit illo qui ut, porro at iure. Quidem corporis
+                voluptatibus, maxime qui ullam possimus explicabo quis, ipsam animi quaerat nesciunt culpa error.</p>
+            <span class="border-span">title1</span>
+            <span class="border-span">title2</span>
+            <span class="border-span">title3</span>
+        </div>
+    </div>
+</body>
+
+</html>

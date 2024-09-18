@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* outline: 1px solid red; */
+        }
+
+        input {
+            padding: 5px;
+            border: none;
+        }
+
+        input:focus {
+            border: none;
+            background-color: #A594F9;
+        }
+
+        button {
+            padding: 10px 60px;
+            background-color: #A594F9;
+            border: 2px solid #9281e8;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="background-color: #E5D9F2;display: flex;justify-content: center;align-items: center;height: 100vh;">
+        <form
+            style="display: flex;flex-direction: column; justify-content: center;align-items: center; gap: 20px;background-color: #ffffff;width: 900px;height: fit-content;padding: 10px;"
+            method="get" action="./Thankyou.html" tabindex="0">
+
+            <img width="200px"
+                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726531200&semt=ais_hybrid">
+
+            <input type="text" name="userID" value="2552002" hidden tabindex="1">
+            <div style="display: flex;align-items: center; gap: 5px;">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input type="text" name="First Name" placeholder="First Name" required tabindex="2">
+            </div>
+            <div style="display: flex;align-items: center; gap: 5px;">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input type="text" name="First Name" placeholder="Last Name" required tabindex="3">
+            </div>
+            <div style="display: flex;align-items: center; gap: 5px;">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" name="email" placeholder="example@mail.com" required tabindex="4">
+            </div>
+            <div style="display: flex;align-items: center; gap: 5px;">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" name="password" placeholder="password" required>
+            </div>
+
+            <div>
+                <input type="checkbox" name="agreed" checked><label for="agreed">
+                    <a target="_blank"
+                        href="https://www.google.com/search?q=trerms&oq=trerms&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjA0M2owajGoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                        I agreed to terms and condition
+                    </a>
+                </label>
+            </div>
+            <div>
+                <button type="submit">submit</button>
+                <button type="reset" style="background-color: red;">reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

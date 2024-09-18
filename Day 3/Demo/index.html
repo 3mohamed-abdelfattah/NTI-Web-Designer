@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 3- external -->
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!-- 2- internal style -->
+    <style>
+        /* p {
+            color: blue;
+            background-color: brown;
+        } */
+        .en {
+            color: blue;
+        }
+
+        .ar {
+            text-align: right;
+        }
+
+        #myHeader {
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        input[type=text] {
+            background-color: bisque;
+        }
+
+        a[href="https://www.linkedin.com/in/elnatory/"] {
+            color: red;
+        }
+
+        img[src=""] {}
+
+        p[id="special"] {
+            background-color: blueviolet;
+        }
+
+        a[href ^="www"] {}
+
+        a[href $=".com"] {}
+
+        a[href~="facebook"] {}
+
+        a[href*="facebook"] {}
+
+        h1,
+        h2 {}
+
+        .myheader,
+        #special,
+        h1 {}
+
+        * {
+            /* margin: 0;
+            padding: 0; */
+            /* border: 1px solid blue; */
+        }
+
+        div * {}
+
+        div p {
+            color: blue;
+        }
+
+        div>p {
+            color: red;
+        }
+
+        /* div span p {
+            color: aqua;
+        } */
+
+        div~h3 {
+            color: blue;
+        }
+
+        div+h3 {
+            color: red;
+        }
+
+        /* h3{
+            color: aqua;
+        } */
+
+        /* a{
+            color: blueviolet;
+        } */
+        /* a:hover{
+            color: white;
+            background-color: black;
+        } */
+        /* a:visited{
+            color: darkgreen;
+         } */
+        /* a:active {
+            color: red;
+        } */
+
+        /* input:focus{
+            background-color: red;
+        } */
+        h1:first-child {
+            color: aqua;
+        }
+
+        h1:last-child {
+            color: brown;
+        }
+
+        h1:nth-child(4) {
+            background-color: bisque;
+        }
+
+        h1:only-child {
+            background-color: cadetblue;
+        }
+
+        #par::after {
+            content: ".. READ MORE ...";
+            color: red;
+            background-color: yellow;
+        }
+
+        span::before {
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1- inline style -->
+    <!-- <p style="color: red; background-color: aqua ;">this is paragraph</p> -->
+    <!-- <p>this is paragraph</p> -->
+    <!-- <p>this is paragraph</p>
+    <p>this is paragraph</p> -->
+
+    <h1 class="en">en header</h1>
+    <h1 class="en">en header</h1>
+    <h1 class="en">en header</h1>
+
+    <h1 class="ar">ar header</h1>
+    <h1 class="ar">ar header</h1>
+    <h1 class="ar">ar header</h1>
+
+    <h1 id="myHeader">header ....</h1>
+
+    <input type="text">
+    <input type="password">
+    <input type="text">
+
+    <a href="https://www.linkedin.com/in/elnatory/">click here</a>
+    <a href="https://iti.gov.eg/home">iti</a>
+
+    <img src="" alt="">
+
+    <p id="special">paragraph</p>
+
+    <!-- <div>
+        <p>direct child</p>
+        <span>
+            <p>indirect child</p>
+        </span>
+    </div> -->
+
+    <!-- <h3>h3</h3>
+    <div>my div</div>
+    <h3>direct sibling</h3>
+    <span>span</span>
+    <h3>indirect sibling</h3> -->
+
+    <!-- <a href="">click</a> -->
+
+    <!-- <input type="text"> -->
+
+    <!-- <div>
+        <h1>Hello</h1>
+        <h1>Muhammad</h1>
+        <h1>Omar</h1>
+        <h1>in NTI</h1>
+    </div>
+    <div>
+        <h1>only child</h1>
+    </div> -->
+
+    <p id="par">this is paragraph</p>
+
+    <span><input type="text" id="input"></span>
+
+</body>
+
+</html>
