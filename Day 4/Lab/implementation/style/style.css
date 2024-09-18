@@ -88,7 +88,19 @@ header>div>ul>li:hover {
     padding: 0px 20px;
 }
 
-input{
+input {
     padding: 5px 20px;
     border: none;
+}
+
+.btn-switch {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #aac644;
+    color: white;
+    font-weight: bolder;
+    border: #aac644;
 }
