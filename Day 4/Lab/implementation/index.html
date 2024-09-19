@@ -2,144 +2,375 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="icon" type="image/png" href="./assets/asset 0.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5c2b71d057.js" crossorigin="anonymous"></script>
     <title>Insurance</title>
-    <style>
-
-    </style>
 </head>
 
 <body>
-
     <!-- Header Nav -->
     <header>
         <div>
-            <img width="40px" src="./assets/asset 0.png">
+            <img width="40px" src="./assets/asset 0.png" />
         </div>
         <div>
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Content Us</li>
+                <li><a href="#" class="no-style">Home</a></li>
+                <li><a href="#about" class="no-style">About Us</a></li>
+                <li><a href="#content" class="no-style">Content Us</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Background Section -->
-    <main style="background-color: goldenrod;position: relative;">
-        <section class=" background-header"
-            style="height: 528px;display: flex;flex-direction: column;justify-content: center;align-items: center;opacity: 60%;">
-        </section>
+    <main style="
+        background-color: rgb(218, 153, 32);
+        position: relative;
+        padding-top: 70px;
+      ">
+        <section class="background-header" style="
+          height: 528px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 55%;
+        "></section>
 
-        <div style="color: rgb(255, 255, 255);width: 990px;font-weight: bolder;position: absolute;top: 20%;left: 20%;">
-            <p style="font-size: 60px;">Keep Your Business Safe<br /> With Our Services.</p>
-            <p style="font-size: 30px;font-weight: 400;">We provide a wide range of insurance services
+        <div style="
+          color: rgb(255, 255, 255);
+          width: 990px;
+          font-weight: bold;
+          position: absolute;
+          top: 30%;
+          left: 15%;
+        ">
+            <p class="hero_title" style="font-size: 54.88px; line-height: 65.856px">
+                Keep Your Business Safe<br />
+                With Our Services.
+            </p>
+            <p class="hero_title" style="font-size: 26px; font-weight: 400">
+                We provide a wide range of insurance services
             </p>
             <button class="learnBt">LEARN HOW</button>
         </div>
-        <button
-            style="position: absolute;top: 50%;left: 15px;width: 60px;height: 60px;background-color:#aac644;color: white;font-weight: bolder;border: #aac644;">⪻</button>
-        <button
-            style="position: absolute;top: 50%;right: 15px;width: 60px;height: 60px;background-color:#aac644;color: white;font-weight: bolder;border: #aac644;">⪼</button>
+        <button class="btn-switch">
+            <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff"></i>
+        </button>
+        <button class="btn-switch" style="left: 15px">
+            <i class="fa-solid fa-chevron-right fa-flip-horizontal fa-xl" style="color: #ffffff"></i>
+        </button>
     </main>
 
     <!-- Insurance Section -->
-    <section style="display: flex;align-items: center; gap: 10px;justify-content: space-evenly;">
-        <div style="display: flex;flex-direction: column;padding: 50px 90px;gap: 10px;">
-            <p style="color: #f8a715;font-weight: 700;font-size: 38px;margin: 10px 0px;">Insurance</p>
-            <p><span style="padding: 0px 10px;"><img src="./assets/hospital.png" alt=""></span>HOUSE INSURANCE </p>
-            <p><span style="padding: 0px 10px;"><img src="./assets/favorite.png" alt=""></span>TRAVEL INSURANCE </p>
-            <p><span style="padding: 0px 10px;"><img src="./assets/planes.png" alt=""></span>CAR INSURANCE </p>
-            <p><span style="padding: 0px 10px;"><img src="./assets/hospital.png" alt=""></span>BUSINESS INSURANCE </p>
-            <p>We protect you in more ways than you'd think. We'll include many coverages that do more than protect your
-                physical structure. </p>
+    <section style="
+        display: flex;
+        margin: 75px 160px;
+        justify-content: space-between;
+        background-color: #fffef8;
+      ">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+            <p style="
+            color: #f8a715;
+            font-weight: 700;
+            font-size: 44.8px;
+            margin: 10px 0px;
+          ">
+                Insurance
+            </p>
+            <p class="insurance_p">
+                <span style="padding: 0px 10px"><i class="fa-solid fa-building fa-xl" style="color: #aac644"></i></span>
+                HOUSE INSURANCE
+            </p>
+            <p class="insurance_p">
+                <span style="padding: 0px 10px"><i class="fa-solid fa-heart-pulse fa-xl"
+                        style="color: #aac644"></i></span>
+                LIFE INSURANCE
+            </p>
+            <p class="insurance_p">
+                <span style="padding: 0px 10px"><i class="fa-solid fa-plane fa-rotate-by fa-xl"
+                        style="color: #aac644; --fa-rotate-angle: 310deg"></i></span>TRAVEL INSURANCE
+            </p>
+            <p class="insurance_p">
+                <span style="padding: 0px 10px"><i class="fa-solid fa-users fa-xl"
+                        style="color: #aac644"></i></span>BUSINESS INSURANCE
+            </p>
+            <p style="
+            max-width: 415px;
+            font-size: 16px;
+            line-height: 27.2px;
+            letter-spacing: 0.68px;
+            font-weight: 400;
+            color: #3f485d;
+          ">
+                We protect you in more ways than you'd think. We'll include many
+                coverages that do more than protect your physical structure.
+            </p>
             <button class="learnBt">LEARN HOW</button>
         </div>
-        <div style="padding: 70px;">
-            <img width="670px" height="360px" src="./assets/asset 4.jpeg" alt="">
+        <img width="670px" style="margin-top: 40px; object-fit: cover" height="370px" src="./assets/asset 4.jpeg"
+            alt="" />
+    </section>
+
+    <!-- Customer Core -->
+    <section style="display: flex; height: 414px">
+        <div class="customer-care" style="background-image: url(./assets/asset\ 5.jpeg)">
+            <img style="z-index: 9999; width: 60px" src="./assets/user.png" alt="" />
+            <div class="hovers"></div>
+            <p class="customer-care-text">Customer care</p>
+            <p style="z-index: 9999">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div class="customer-care" style="background-image: url(./assets/asset\ 6.jpeg)">
+            <img style="z-index: 9999; width: 50px" src="./assets/mark.png" alt="" />
+            <div class="hovers"></div>
+            <p class="customer-care-text">Claims information</p>
+            <p style="z-index: 9999">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div class="customer-care" style="background-image: url(./assets/asset\ 7.jpeg)">
+            <img style="z-index: 9999; width: 50px" src="./assets/pen.png" alt="" />
+            <div class="hovers"></div>
+            <p class="customer-care-text">Request a quote</p>
+            <p style="z-index: 9999">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </section>
 
-
-    <!-- Customer Core -->
-    <section style="display: flex;height: 414px;">
-        <div class="customer-care" style="background-image: url(./assets/asset\ 5.jpeg);position: relative;">
-            <img style="z-index: 9999;" src="./assets/user_17226614.png" alt="">
-            <div class="hoverd"
-                style="position: absolute;width: 100%;height: 100%;  background-color: #61794a;left: 0px;"></div>
-            <p style="font-size: 26px;font-weight: bold;z-index: 9999;"> Customer care</p>
-            <p style="z-index: 9999;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
-        </div>
-        <div class="customer-care" style="background-image: url(./assets/asset\ 6.jpeg);position: relative;">
-            <img style="z-index: 9999;" src="./assets/user_17226614.png" alt="">
-            <div class="hoverd"
-                style="position: absolute;width: 100%;height: 100%;  background-color: #61794a;left: 0px;"></div>
-            <p style="font-size: 26px;font-weight: bold;z-index: 9999;"> Customer care</p>
-            <p style="z-index: 9999;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
-        </div>
-        <div class="customer-care" style="background-image: url(./assets/asset\ 7.jpeg);position: relative;">
-            <img style="z-index: 9999;" src="./assets/user_17226614.png" alt="">
-            <div class="hoverd"
-                style="position: absolute;width: 100%;height: 100%;  background-color: #61794a;left: 0px;"></div>
-            <p style="font-size: 26px;font-weight: bold;z-index: 9999;"> Customer care</p>
-            <p style="z-index: 9999;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
+    <!-- About US -->
+    <section id="about" style="
+        background-color: #fffef8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      ">
+        <div style="display: flex; max-width: 1200px; padding: 20px">
+            <div style="flex: 1">
+                <h1 style="
+              font-family: Poppins;
+              color: #f8a715;
+              font-size: 54.88px;
+              line-height: 65.856px;
+              letter-spacing: 0.68px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            ">
+                    About Us
+                </h1>
+                <ul style="list-style-type: none; margin-bottom: 20px; padding: 0">
+                    <li style="
+                font-size: 16px;
+                line-height: 27.2px;
+                letter-spacing: 0.68px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+              ">
+                        <span style="
+                  color: #9acd32;
+                  font-weight: bold;
+                  display: inline-block;
+                  margin-right: 10px;
+                  font-size: 12px;
+                ">■</span>
+                        Affordable Prices.
+                    </li>
+                    <li style="
+                font-size: 16px;
+                line-height: 27.2px;
+                letter-spacing: 0.68px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+              ">
+                        <span style="
+                  color: #9acd32;
+                  font-weight: bold;
+                  display: inline-block;
+                  margin-right: 10px;
+                  font-size: 12px;
+                ">■</span>
+                        Competent Professionals.
+                    </li>
+                    <li style="
+                font-size: 16px;
+                line-height: 27.2px;
+                letter-spacing: 0.68px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+              ">
+                        <span style="
+                  color: #9acd32;
+                  font-weight: bold;
+                  display: inline-block;
+                  margin-right: 10px;
+                  font-size: 12px;
+                ">■</span>
+                        Insurance Payment Without Delay.
+                    </li>
+                    <li style="
+                font-size: 16px;
+                line-height: 27.2px;
+                letter-spacing: 0.68px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+              ">
+                        <span style="
+                  color: #9acd32;
+                  font-weight: bold;
+                  display: inline-block;
+                  margin-right: 10px;
+                  font-size: 12px;
+                ">■</span>
+                        24/7 Friendly Support.
+                    </li>
+                </ul>
+                <p style="
+              font-size: 16px;
+              line-height: 27.2px;
+              letter-spacing: 0.68px;
+              margin-bottom: 30px;
+            ">
+                    The professionals Insurance Company are experts in their fields and
+                    will help you design solutions that fit your needs. We look forward
+                    to working with you!
+                </p>
+                <div style="display: flex; justify-content: space-evenly">
+                    <div style="text-align: center; width: 100%; text-align: start">
+                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                            1500+
+                        </h2>
+                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                            Happy Clients
+                        </p>
+                    </div>
+                    <div style="border-left: 2px solid #ccc; height: auto; margin: 0 30px"></div>
+                    <div style="text-align: center; width: 100%; text-align: start">
+                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                            200+
+                        </h2>
+                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                            Professional Agents
+                        </p>
+                    </div>
+                </div>
+                <div style="
+              display: flex;
+              justify-content: space-evenly;
+              margin-top: 20px;
+            ">
+                    <div style="text-align: center; width: 100%; text-align: start">
+                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                            25+
+                        </h2>
+                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                            Insurance Products
+                        </p>
+                    </div>
+                    <div style="border-left: 2px solid #ccc; height: auto; margin: 0 30px"></div>
+                    <div style="text-align: center; width: 100%; text-align: start">
+                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                            15
+                        </h2>
+                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                            Years of Experience
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 1; margin-left: 50px">
+                <img src="./assets/asset 8.jpeg" alt="About Us Image" style="
+              width: 680px;
+              height: 540px;
+              border-radius: 5px;
+              object-fit: cover;
+            " />
+            </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <p style="text-align: center;color: #f8a715;font-size: 56px;font-weight: bold;padding: 70px;">Testimonials</p>
-    <div style="display: flex;justify-content: center;align-items: center;">
+    <p style="
+        text-align: center;
+        color: #f8a715;
+        font-size: 56px;
+        font-weight: bold;
+        padding: 70px;
+      ">
+        Testimonials
+    </p>
+    <div style="display: flex; justify-content: center; align-items: center">
         <div class="trans">
-            <img width="100px" style="border-radius: 100%;" src="./assets/asset 15.jpeg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, ab cumque eius mollitia quos
-                deseruntdistinctio?</p>
+            <img width="100px" style="border-radius: 100%" src="./assets/asset 15.jpeg" alt="" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
         </div>
         <div class="trans">
-            <img width="100px" style="border-radius: 100%;" src="./assets/asset 16.jpeg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, ab cumque eius mollitia quos
-                deseruntdistinctio?</p>
+            <img width="100px" style="border-radius: 100%" src="./assets/asset 16.jpeg" alt="" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </p>
         </div>
         <div class="trans">
-            <img width="100px" style="border-radius: 100%;" src="./assets/asset 17.jpeg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, ab cumque eius mollitia quos
-                deseruntdistinctio?</p>
+            <img width="100px" style="border-radius: 100%" src="./assets/asset 17.jpeg" alt="" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </p>
         </div>
     </div>
 
-    <!-- Form -->
-    <div style="display: flex; margin: 100px 0px;justify-content: center;gap: 50px;">
-        <img width="35%" src="./assets/asset 18.jpeg" alt="">
+    <!-- Contact Us -->
+    <div id="content" style="
+        display: flex;
+        margin: 100px 0px;
+        justify-content: center;
+        gap: 50px;
+      ">
+        <img width="35%" src="./assets/asset 18.jpeg" alt="" />
         <form>
-            <p style="color: #f8a715;font-weight: bold;font-size: 44px;">Contact Us</p>
+            <p style="color: #f8a715; font-weight: bold; font-size: 44px">
+                Contact Us
+            </p>
             <div>
                 <div>
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="name" />
+                    <input type="text" placeholder="name" />
                 </div>
-                <div style="display: flex;flex-direction: column;">
-                    <input type="text" placeholder="email">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div style="display: flex; flex-direction: column">
+                    <input type="text" placeholder="email" />
+                    <textarea cols="30" rows="10"></textarea>
                 </div>
             </div>
         </form>
     </div>
 
-    <footer
-        style="display: flex;justify-content: center;align-items: center;color: white;font-size: 18px;background-color: #61794a;padding: 20px;">
-        <p>© Copyright 2018 Insurance - All Rights Reserved </p>
+    <footer style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        background-color: #61794a;
+        padding: 20px;
+      ">
+        <p>© Copyright 2018 Insurance - All Rights Reserved</p>
     </footer>
 </body>
 
