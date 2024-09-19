@@ -114,3 +114,45 @@ input {
     padding: 5px 20px;
     border: none;
 }
+
+.btn-switch {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #aac644;
+    color: white;
+    font-weight: bolder;
+    border: #aac644;
+    cursor: pointer;
+}
+
+.hero_title {
+    font-family: "Poppins", sans-serif;
+}
+
+.insurance_p {
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+    color: #3f485d;
+}
+
+.customer-care-text {
+    font-size: 24px;
+    line-height: 31.2px;
+    letter-spacing: 0.68px;
+    font-weight: bold;
+    z-index: 9999;
+    font-family: Poppins;
+}
+
+.no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-style:hover {
+    text-decoration: underline;
+}
