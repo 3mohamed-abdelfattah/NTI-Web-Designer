@@ -1,3 +1,5 @@
+/* Global */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,28 @@ html {
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+hr {
+    width: 40px;
+    background-color: #aac644;
+    height: 3px;
+    border: 2px solid #aac644;
+}
+
+/* Top Arrow */
+.top_arrow {
+    position: fixed;
+    color: #aac64498;
+    bottom: 50px;
+    right: 40px;
+    z-index: 10;
+}
+
+.top_arrow:hover {
+    color: rgba(218, 165, 32, 0.541);
+}
+
+/* Header Section */
 
 header {
     display: flex;
@@ -40,6 +64,17 @@ header>div>ul>li:hover {
     scale: 1.1;
     cursor: pointer;
 }
+
+.no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-style:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 
 .background-header {
     background-image: url(../assets/asset\ 1.jpeg);
@@ -68,6 +103,91 @@ header>div>ul>li:hover {
     color: #aac644;
 }
 
+.btn-switch {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #aac644;
+    color: white;
+    font-weight: bolder;
+    border: #aac644;
+    cursor: pointer;
+}
+
+.hero_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 54.88px;
+    line-height: 65.856px
+}
+
+main {
+    background-color: rgb(218, 153, 32);
+    position: relative;
+    padding-top: 70px;
+}
+
+section.background-header {
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 55%;
+}
+
+.hero-text-container {
+    color: rgb(255, 255, 255);
+    width: 990px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+/* Insurance Section */
+
+.insurance-section {
+    display: flex;
+    margin: 75px 160px;
+    justify-content: space-between;
+    background-color: #fffef8;
+}
+
+.insurance_p {
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+    color: #3f485d;
+}
+
+.head_insurance_title {
+    color: #f8a715;
+    font-weight: 700;
+    font-size: 44.8px;
+    margin: 10px 0px;
+}
+
+.sub_insurance_title {
+    max-width: 415px;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    font-weight: 400;
+    color: #3f485d;
+}
+
+.insurance_p>span {
+    padding: 0px 10px
+}
+
+i {
+    color: #aac644;
+}
+
+/* Customer Info Section */
+
 .customer-care {
     display: flex;
     flex-direction: column;
@@ -81,6 +201,15 @@ header>div>ul>li:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.customer-care-text {
+    font-size: 24px;
+    line-height: 31.2px;
+    letter-spacing: 0.68px;
+    font-weight: bold;
+    z-index: 9999;
+    font-family: Poppins;
 }
 
 .hovers {
@@ -98,61 +227,255 @@ header>div>ul>li:hover {
     filter: brightness();
 }
 
+/* About Section */
+
+#about {
+    background-color: #fffef8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.head_about_title {
+    font-family: Poppins;
+    color: #f8a715;
+    font-size: 54.88px;
+    line-height: 65.856px;
+    letter-spacing: 0.68px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about_list {
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about_discussion {
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    margin-bottom: 30px;
+}
+
+.square_shape {
+    color: #9acd32;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.status_count {
+    text-align: center;
+    width: 100%;
+    text-align: start
+}
+
+.status_count>h2 {
+    color: #f8a715;
+    font-size: 44.8px;
+    margin-bottom: 5px
+}
+
+.status_count>p {
+    color: #61794a;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.about_img {
+    width: 680px;
+    height: 540px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Meet Section */
+
+.meet_title {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.68px;
+    color: #3f485d;
+    max-width: 260px;
+    gap: 10px;
+}
+
+.team_name {
+    text-align: start;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    color: #3f485d;
+    font-weight: 700;
+}
+
+.meet_disc {
+    text-align: start;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3f485d;
+}
+
+/* News Section */
+.news {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.68px;
+    color: #3f485d;
+    max-width: 380px;
+    gap: 30px;
+}
+
+.by_admin {
+    color: #3f485d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.by_admin>span {
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.news_disc {
+    font-family: "Poppins", sans-serif;
+    color: #3f485d;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31.2px;
+    letter-spacing: 0.68px;
+}
+
+.example {
+    color: #aac644;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+/* Testimonials Section */
+
+.testimonials-heading {
+    text-align: center;
+    color: #f8a715;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 70px;
+}
+
 .trans {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.68px;
+    color: #3f485d;
+    max-width: 380px;
+    gap: 45px;
 }
 
 .trans>p {
     padding: 0px 20px;
 }
 
-input {
-    padding: 5px 20px;
-    border: none;
+.testimonials-names {
+    color: #aac644;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
 }
 
-.btn-switch {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 60px;
-    height: 60px;
+/* Contact Us Section */
+
+#content {
+    display: flex;
+    margin-top: 40px;
+    padding: 70px 0px;
+    justify-content: center;
+    gap: 85px;
+    background-color: #fffef8;
+}
+
+#content>form>p {
+    font-family: "Poppins", sans-serif;
+    color: #f8a715;
+    font-weight: bold;
+    font-size: 54.88px;
+    letter-spacing: 0.68px;
+    line-height: 65.856px;
+    margin-bottom: 25px;
+}
+
+input {
+    font-family: "Poppins", sans-serif;
+    color: #f8a715;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 6px 10px;
+    margin: 0px 15px 20px 15px;
+    border: 1px solid lightgray;
+}
+
+textarea {
+    font-family: "Poppins", sans-serif;
+    color: #f8a715;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 6px 10px;
+    margin: 0px 15px 20px 15px;
+    border: 1px solid lightgray;
+}
+
+.sendBt {
     background-color: #aac644;
+    font-size: 17px;
     color: white;
-    font-weight: bolder;
-    border: #aac644;
+    padding: 15px 22px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: #aac644 2px solid;
+    margin: 15px;
     cursor: pointer;
 }
 
-.hero_title {
-    font-family: "Poppins", sans-serif;
+.sendBt:hover {
+    background-color: #aac64400;
+    border: #aac644 2px solid;
+    color: #aac644;
 }
 
-.insurance_p {
-    font-size: 17px;
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     line-height: 34px;
-    letter-spacing: 0.88px;
-    color: #3f485d;
-}
-
-.customer-care-text {
-    font-size: 24px;
-    line-height: 31.2px;
+    font-size: 17px;
     letter-spacing: 0.68px;
-    font-weight: bold;
-    z-index: 9999;
-    font-family: Poppins;
-}
-
-.no-style {
-    text-decoration: none;
-    color: inherit;
-}
-
-.no-style:hover {
-    text-decoration: underline;
+    background-color: #61794a;
+    padding: 20px;
 }

@@ -16,6 +16,12 @@
 </head>
 
 <body>
+
+    <!-- Back Top Arrow -->
+    <a href="#">
+        <i class="fa-solid fa-chevron-up fa-2xl top_arrow"></i>
+    </a>
+
     <!-- Header Nav -->
     <header>
         <div>
@@ -31,29 +37,11 @@
     </header>
 
     <!-- Background Section -->
-    <main style="
-        background-color: rgb(218, 153, 32);
-        position: relative;
-        padding-top: 70px;
-      ">
-        <section class="background-header" style="
-          height: 528px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          opacity: 55%;
-        "></section>
+    <main>
+        <section class="background-header"></section>
 
-        <div style="
-          color: rgb(255, 255, 255);
-          width: 990px;
-          font-weight: bold;
-          position: absolute;
-          top: 30%;
-          left: 15%;
-        ">
-            <p class="hero_title" style="font-size: 54.88px; line-height: 65.856px">
+        <div class="hero-text-container">
+            <p class="hero_title">
                 Keep Your Business Safe<br />
                 With Our Services.
             </p>
@@ -71,53 +59,34 @@
     </main>
 
     <!-- Insurance Section -->
-    <section style="
-        display: flex;
-        margin: 75px 160px;
-        justify-content: space-between;
-        background-color: #fffef8;
-      ">
+    <section class="insurance-section">
         <div style="display: flex; flex-direction: column; gap: 10px">
-            <p style="
-            color: #f8a715;
-            font-weight: 700;
-            font-size: 44.8px;
-            margin: 10px 0px;
-          ">
+            <p class="head_insurance_title">
                 Insurance
             </p>
             <p class="insurance_p">
-                <span style="padding: 0px 10px"><i class="fa-solid fa-building fa-xl" style="color: #aac644"></i></span>
+                <span><i class="fa-solid fa-building fa-xl"></i></span>
                 HOUSE INSURANCE
             </p>
             <p class="insurance_p">
-                <span style="padding: 0px 10px"><i class="fa-solid fa-heart-pulse fa-xl"
-                        style="color: #aac644"></i></span>
+                <span><i class="fa-solid fa-heart-pulse fa-xl"></i></span>
                 LIFE INSURANCE
             </p>
             <p class="insurance_p">
-                <span style="padding: 0px 10px"><i class="fa-solid fa-plane fa-rotate-by fa-xl"
-                        style="color: #aac644; --fa-rotate-angle: 310deg"></i></span>TRAVEL INSURANCE
+                <span><i class="fa-solid fa-plane fa-rotate-by fa-xl"
+                        style="--fa-rotate-angle: 310deg"></i></span>TRAVEL INSURANCE
             </p>
             <p class="insurance_p">
-                <span style="padding: 0px 10px"><i class="fa-solid fa-users fa-xl"
-                        style="color: #aac644"></i></span>BUSINESS INSURANCE
+                <span><i class="fa-solid fa-users fa-xl"></i></span>BUSINESS INSURANCE
             </p>
-            <p style="
-            max-width: 415px;
-            font-size: 16px;
-            line-height: 27.2px;
-            letter-spacing: 0.68px;
-            font-weight: 400;
-            color: #3f485d;
-          ">
+            <p class="sub_insurance_title">
                 We protect you in more ways than you'd think. We'll include many
                 coverages that do more than protect your physical structure.
             </p>
             <button class="learnBt">LEARN HOW</button>
         </div>
-        <img width="670px" style="margin-top: 40px; object-fit: cover" height="370px" src="./assets/asset 4.jpeg"
-            alt="" />
+        <img width="670px" style="margin-top: 40px; object-fit: cover;border-radius: 10px;" height="370px"
+            src="./assets/asset 4.jpeg" alt="" />
     </section>
 
     <!-- Customer Core -->
@@ -152,168 +121,153 @@
     </section>
 
     <!-- About US -->
-    <section id="about" style="
-        background-color: #fffef8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-      ">
+    <section id="about">
         <div style="display: flex; max-width: 1200px; padding: 20px">
             <div style="flex: 1">
-                <h1 style="
-              font-family: Poppins;
-              color: #f8a715;
-              font-size: 54.88px;
-              line-height: 65.856px;
-              letter-spacing: 0.68px;
-              font-weight: bold;
-              margin-bottom: 20px;
-            ">
+                <h1 class="head_about_title">
                     About Us
                 </h1>
                 <ul style="list-style-type: none; margin-bottom: 20px; padding: 0">
-                    <li style="
-                font-size: 16px;
-                line-height: 27.2px;
-                letter-spacing: 0.68px;
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-              ">
-                        <span style="
-                  color: #9acd32;
-                  font-weight: bold;
-                  display: inline-block;
-                  margin-right: 10px;
-                  font-size: 12px;
-                ">■</span>
+                    <li class="about_list">
+                        <span class="square_shape">■</span>
                         Affordable Prices.
                     </li>
-                    <li style="
-                font-size: 16px;
-                line-height: 27.2px;
-                letter-spacing: 0.68px;
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-              ">
-                        <span style="
-                  color: #9acd32;
-                  font-weight: bold;
-                  display: inline-block;
-                  margin-right: 10px;
-                  font-size: 12px;
-                ">■</span>
+                    <li class="about_list">
+                        <span class="square_shape">■</span>
                         Competent Professionals.
                     </li>
-                    <li style="
-                font-size: 16px;
-                line-height: 27.2px;
-                letter-spacing: 0.68px;
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-              ">
-                        <span style="
-                  color: #9acd32;
-                  font-weight: bold;
-                  display: inline-block;
-                  margin-right: 10px;
-                  font-size: 12px;
-                ">■</span>
+                    <li class="about_list">
+                        <span class="square_shape">■</span>
                         Insurance Payment Without Delay.
                     </li>
-                    <li style="
-                font-size: 16px;
-                line-height: 27.2px;
-                letter-spacing: 0.68px;
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-              ">
-                        <span style="
-                  color: #9acd32;
-                  font-weight: bold;
-                  display: inline-block;
-                  margin-right: 10px;
-                  font-size: 12px;
-                ">■</span>
+                    <li class="about_list">
+                        <span class="square_shape">■</span>
                         24/7 Friendly Support.
                     </li>
                 </ul>
-                <p style="
-              font-size: 16px;
-              line-height: 27.2px;
-              letter-spacing: 0.68px;
-              margin-bottom: 30px;
-            ">
+                <p class="about_discussion">
                     The professionals Insurance Company are experts in their fields and
                     will help you design solutions that fit your needs. We look forward
                     to working with you!
                 </p>
                 <div style="display: flex; justify-content: space-evenly">
-                    <div style="text-align: center; width: 100%; text-align: start">
-                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                    <div class="status_count">
+                        <h2>
                             1500+
                         </h2>
-                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                        <p>
                             Happy Clients
                         </p>
                     </div>
                     <div style="border-left: 2px solid #ccc; height: auto; margin: 0 30px"></div>
-                    <div style="text-align: center; width: 100%; text-align: start">
-                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                    <div class="status_count">
+                        <h2>
                             200+
                         </h2>
-                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                        <p>
                             Professional Agents
                         </p>
                     </div>
                 </div>
-                <div style="
-              display: flex;
-              justify-content: space-evenly;
-              margin-top: 20px;
-            ">
-                    <div style="text-align: center; width: 100%; text-align: start">
-                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                <div style="display: flex;justify-content: space-evenly;margin-top: 20px;">
+                    <div class="status_count">
+                        <h2>
                             25+
                         </h2>
-                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                        <p>
                             Insurance Products
                         </p>
                     </div>
                     <div style="border-left: 2px solid #ccc; height: auto; margin: 0 30px"></div>
-                    <div style="text-align: center; width: 100%; text-align: start">
-                        <h2 style="color: #f8a715; font-size: 44.8px; margin-bottom: 5px">
+                    <div class="status_count">
+                        <h2>
                             15
                         </h2>
-                        <p style="color: #61794a; font-size: 16px; font-weight: bold">
+                        <p>
                             Years of Experience
                         </p>
                     </div>
                 </div>
             </div>
             <div style="flex: 1; margin-left: 50px">
-                <img src="./assets/asset 8.jpeg" alt="About Us Image" style="
-              width: 680px;
-              height: 540px;
-              border-radius: 5px;
-              object-fit: cover;
-            " />
+                <img src="./assets/asset 8.jpeg" alt="About Us Image" class="about_img" />
             </div>
         </div>
     </section>
 
+    <!-- Meet Our Team -->
+    <p class="testimonials-heading">
+        Meet Our Team
+    </p>
+    <div style="display: flex; justify-content: center; align-items: start">
+        <img width="78px" style="border-radius: 100%;margin:0px 30px;" src="./assets/asset 9.jpeg" alt="" />
+        <div class="meet_title">
+            <p class="team_name">Olivia Snow</p>
+            <span style="display: flex;align-items: center;gap: 15px;">
+                <hr style="width: 25px; border: 2px;" />
+                <p class="testimonials-names">Chief Financial Officer</p>
+            </span>
+            <p class="meet_disc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+        </div>
+        <img width="78px" style="border-radius: 100%;margin:0px 30px;" src="./assets/asset 10.jpeg" alt="" />
+        <div class="meet_title">
+            <p class="team_name">Rafe Stevenson</p>
+            <span style="display: flex;align-items: center;gap: 15px;">
+                <hr style="width: 25px; border: 2px;" />
+                <p class="testimonials-names">Vice President of Claims</p>
+            </span>
+            <p class="meet_disc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+        </div>
+        <img width="78px" style="border-radius: 100%;margin:0px 30px;" src="./assets/asset 11.jpeg" alt="" />
+        <div class="meet_title">
+            <p class="team_name">Hilary Mills</p>
+            <span style="display: flex;align-items: center;gap: 15px;">
+                <hr style="width: 25px; border: 2px;" />
+                <p class="testimonials-names">Executive Vice President</p>
+            </span>
+            <p class="meet_disc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+        </div>
+    </div>
+
+    <!-- Latest News -->
+    <p class="testimonials-heading">
+        Latest News
+    </p>
+    <div style="display: flex; justify-content: center; align-items: center;gap: 20px;">
+        <div class="news">
+            <img width="370px" src="./assets/asset 12.jpeg" alt="" />
+            <span class="by_admin">by admin <span>|</span> June 28, 2018</span>
+            <p class="news_disc">
+                How to Properly Extend Insured Status
+            </p>
+            <a class="example" href="https://example.com/">READ MORE</a>
+        </div>
+        <div class="news">
+            <img width="370px" src="./assets/asset 13.jpeg" alt="" />
+            <span class="by_admin">by admin <span>|</span> June 28, 2018</span>
+            <p class="news_disc">
+                A Look into Nonprofit Risk Management
+            </p>
+            <a class="example" href="https://example.com/">READ MORE</a>
+        </div>
+        <div class="news">
+            <img width="370px" src="./assets/asset 14.jpeg" alt="" />
+            <span class="by_admin">by admin <span>|</span> June 28, 2018</span>
+            <p class="news_disc">
+                Workers’ Compensation: Combinability of Insureds
+            </p>
+            <a class="example" href="https://example.com/">READ MORE</a>
+        </div>
+    </div>
+
     <!-- Testimonials -->
-    <p style="
-        text-align: center;
-        color: #f8a715;
-        font-size: 56px;
-        font-weight: bold;
-        padding: 70px;
-      ">
+    <p class="testimonials-heading">
         Testimonials
     </p>
     <div style="display: flex; justify-content: center; align-items: center">
@@ -321,55 +275,51 @@
             <img width="100px" style="border-radius: 100%" src="./assets/asset 15.jpeg" alt="" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </p>
+            <hr />
+            <p class="testimonials-names">Reynard Cox</p>
         </div>
         <div class="trans">
             <img width="100px" style="border-radius: 100%" src="./assets/asset 16.jpeg" alt="" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
+            <hr />
+            <p class="testimonials-names">Corey Robertson</p>
         </div>
         <div class="trans">
             <img width="100px" style="border-radius: 100%" src="./assets/asset 17.jpeg" alt="" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
+            <hr />
+            <p class="testimonials-names">Joseph Sparks</p>
         </div>
     </div>
 
     <!-- Contact Us -->
-    <div id="content" style="
-        display: flex;
-        margin: 100px 0px;
-        justify-content: center;
-        gap: 50px;
-      ">
-        <img width="35%" src="./assets/asset 18.jpeg" alt="" />
+    <div id="content">
+        <img width="570px" height="544px" src="./assets/asset 18.jpeg" style="object-fit: cover;" />
         <form>
-            <p style="color: #f8a715; font-weight: bold; font-size: 44px">
+            <p>
                 Contact Us
             </p>
             <div>
                 <div>
-                    <input type="text" placeholder="name" />
-                    <input type="text" placeholder="name" />
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Last Name" />
                 </div>
                 <div style="display: flex; flex-direction: column">
-                    <input type="text" placeholder="email" />
-                    <textarea cols="30" rows="10"></textarea>
+                    <input type="text" placeholder="E-mail Address" />
+                    <textarea rows="7" placeholder="Message"></textarea>
                 </div>
+                <button class="sendBt">SEND</button>
             </div>
         </form>
     </div>
 
-    <footer style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 18px;
-        background-color: #61794a;
-        padding: 20px;
-      ">
+    <!-- Footer -->
+    <footer>
         <p>© Copyright 2018 Insurance - All Rights Reserved</p>
     </footer>
 </body>
