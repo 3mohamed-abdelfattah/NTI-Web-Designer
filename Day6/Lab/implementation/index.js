@@ -14,20 +14,20 @@
 //* zero
 
 //! QS 4
-// var y;
-// console.log(typeof y);
+var y;
+console.log(typeof y);
 //* undefined
 
 //! QS 5
-// var x = "1";
-// var y = 2;
-// console.log(x + y);
-//* 3
+var x = "1";
+var y = 2;
+console.log(x + y);
+//* 12
 
 //! QS 6
-// var x = 1;
-// var y = true;
-// console.log(x + y);
+var x = 1;
+var y = true;
+console.log(x + y);
 //* 2
 
 //! QS 7
@@ -37,9 +37,9 @@
 //* 2
 
 //! QS 8
-// console.log(15 + 3 + "number");
-// console.log("number" + 15 + 3);
-//* 8number
+console.log(15 + 3 + "number");
+console.log("number" + 15 + 3);
+//* 18number
 //*  number153
 
 //! QS 9
