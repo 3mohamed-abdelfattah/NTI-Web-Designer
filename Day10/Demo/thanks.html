@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>thanks for submitting</h1> -->
+    <script>
+        // console.log(location.search.split("=")[1]);
+        var str = location.search
+        var arr =str.split("=")
+        var userName =arr[1]
+
+        document.write(`Welcome ${userName}`)
+    </script>
+</body>
+</html>
