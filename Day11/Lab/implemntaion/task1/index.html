@@ -4,13 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
-        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
-        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Document</title>
+    <title>JavaScript Calculator</title>
     <style>
         .width {
             width: 55px;
@@ -74,43 +68,72 @@
             <td><input type="button" class="width" value="/" onclick="dis('/')"></td>
         </tr>
     </table>
+
     <script>
-        // Function that display value
+        let expression = "";
+
         function dis(val) {
-            document.getElementById("result").value += val
+            expression += val;
+            document.getElementById("result").value = expression;
         }
 
-        function myFunction(event) {
-            if (event.key == '0' || event.key == '1'
-                || event.key == '2' || event.key == '3'
-                || event.key == '4' || event.key == '5'
-                || event.key == '6' || event.key == '7'
-                || event.key == '8' || event.key == '9'
-                || event.key == '+' || event.key == '-'
-                || event.key == '*' || event.key == '/')
-                document.getElementById("result").value += event.key;
-        }
-
-        var cal = document.getElementById("calcu");
-        cal.onkeyup = function (event) {
-            if (event.keyCode === 13) {
-                console.log("Enter");
-                let x = document.getElementById("result").value
-                console.log(x);
-                solve();
+        function solve() {
+            if (isValidExpression(expression)) {
+                let result = calculateExpression(expression);
+                document.getElementById("result").value = result;
+                expression = result.toString();
+            } else {
+                document.getElementById("result").value = "Invalid";
+                expression = "";
             }
         }
 
-        // Function that evaluates the digit and return result
-        function solve() {
-            let x = document.getElementById("result").value
-            let y = math.evaluate(x)
-            document.getElementById("result").value = y
+        function isValidExpression(exp) {
+            const validCharacters = /^[0-9+\-*/.]+$/;
+            const operators = /[+\-*/]{2,}/;
+            return validCharacters.test(exp) && !operators.test(exp) && !exp.endsWith('+') && !exp.endsWith('-') && !exp.endsWith('*') && !exp.endsWith('/');
         }
 
-        // Function that clear the display
+        function calculateExpression(exp) {
+            let numbers = [];
+            let operators = [];
+            let currentNumber = "";
+
+            for (let i = 0; i < exp.length; i++) {
+                let char = exp[i];
+                if (!isNaN(char) || char === ".") {
+                    currentNumber += char;
+                } else {
+                    numbers.push(parseFloat(currentNumber));
+                    operators.push(char);
+                    currentNumber = "";
+                }
+            }
+            numbers.push(parseFloat(currentNumber));
+
+            let result = numbers[0];
+            for (let i = 0; i < operators.length; i++) {
+                switch (operators[i]) {
+                    case '+':
+                        result += numbers[i + 1];
+                        break;
+                    case '-':
+                        result -= numbers[i + 1];
+                        break;
+                    case '*':
+                        result *= numbers[i + 1];
+                        break;
+                    case '/':
+                        result /= numbers[i + 1];
+                        break;
+                }
+            }
+            return result;
+        }
+
         function clr() {
-            document.getElementById("result").value = ""
+            expression = "";
+            document.getElementById("result").value = "";
         }
     </script>
 </body>
