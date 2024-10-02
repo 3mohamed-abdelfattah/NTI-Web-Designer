@@ -74,6 +74,7 @@
 
         function dis(val) {
             expression += val;
+            console.log(expression);
             document.getElementById("result").value = expression;
         }
 
@@ -107,6 +108,7 @@
                     numbers.push(parseFloat(currentNumber));
                     operators.push(char);
                     currentNumber = "";
+                    console.log(currentNumber);
                 }
             }
             numbers.push(parseFloat(currentNumber));
@@ -114,17 +116,17 @@
             let result = numbers[0];
             for (let i = 0; i < operators.length; i++) {
                 switch (operators[i]) {
-                    case '+':
-                        result += numbers[i + 1];
-                        break;
-                    case '-':
-                        result -= numbers[i + 1];
-                        break;
                     case '*':
                         result *= numbers[i + 1];
                         break;
                     case '/':
                         result /= numbers[i + 1];
+                        break;
+                    case '+':
+                        result += numbers[i + 1];
+                        break;
+                    case '-':
+                        result -= numbers[i + 1];
                         break;
                 }
             }
