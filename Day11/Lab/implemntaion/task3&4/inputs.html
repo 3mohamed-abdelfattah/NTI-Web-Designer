@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            background-color: mediumaquamarine;
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-bottom: 200px;">
+        <input type="text" name="number" id="tonumber" placeholder="Enter only number" value="2552002">
+        <button onclick="deleteAll()">Delete All</button>
+        <button onclick="deleteOne()">Delete One</button>
+    </div>
+
+    <input id="name" type="text" value="" required placeholder="Name">
+    <input id="number" type="number" value="" required placeholder="Age">
+    <input id="email" type="email" value="" required placeholder="Email">
+    <button id="sub" onclick="submitForm()">submit</button>
+    <button type="reset">reset</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

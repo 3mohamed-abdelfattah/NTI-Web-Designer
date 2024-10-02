@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slideshow-container" style="width: 500px;">
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="../../TasksResource/SlideShow/6.jpg" style="width:100%">
+        </div>
+
+    </div>
+
+    <button id="controlButton" onclick="toggleSlideshow()">Stop Slideshow</button>
+    <button id="loopButton" onclick="toggleLoop()">Disable Looping</button>
+
+    <script>
+        let slideIndex = 0;
+        let isPlaying = true;
+        let isLooping = true;
+        let slideInterval;
+
+        startSlideshow();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (!isLooping && slideIndex > slides.length) {
+                stopSlideshow();
+                return;
+            }
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function startSlideshow() {
+            showSlides();
+            slideInterval = setInterval(showSlides, 2000);
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideInterval);
+        }
+
+        function toggleSlideshow() {
+            if (isPlaying) {
+                stopSlideshow();
+                document.getElementById("controlButton").innerHTML = "Start Slideshow";
+            } else {
+                startSlideshow();
+                document.getElementById("controlButton").innerHTML = "Stop Slideshow";
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function toggleLoop() {
+            isLooping = !isLooping;
+            if (isLooping) {
+                document.getElementById("loopButton").innerHTML = "Disable Looping";
+            } else {
+                document.getElementById("loopButton").innerHTML = "Enable Looping";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
